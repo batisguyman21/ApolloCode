@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.teamcode.Mechanisms.TestBench_IMU;
 
-@TeleOp
+//@TeleOp
 public class Practice_IMU extends OpMode {
     TestBench_IMU bench = new TestBench_IMU();
     @Override

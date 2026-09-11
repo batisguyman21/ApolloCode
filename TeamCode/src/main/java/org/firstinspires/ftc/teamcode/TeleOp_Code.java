@@ -17,16 +17,16 @@ import org.firstinspires.ftc.teamcode.Mechanisms.Imu;
 import org.firstinspires.ftc.teamcode.Mechanisms.LimeLight;
 
 
-@TeleOp(name = "TeleOp Batis-Leo-Bastien", group = "TeleOp_Tests")
+@TeleOp(name = "TeleOp 2026-2027", group = "TeleOp_Tests")
 public class TeleOp_Code extends LinearOpMode {
     Imu imu = new Imu();
     LimeLight limeLight = new LimeLight();
     ArcadeDrive drive = new ArcadeDrive();
 
-    enum Etat{
-        //ecrire les objectives/but dun section du code
-        Attendre
-    };
+//    enum Etat{
+//        //ecrire les objectives/but dun section du code
+//        Attendre
+//    };
 
     @Override
     public void runOpMode() {
@@ -41,6 +41,7 @@ public class TeleOp_Code extends LinearOpMode {
             throttle = -gamepad1.left_stick_y;
             spin = gamepad1.left_stick_x;
             drive.drive(throttle, spin);
+            
             telemetry.addData("Distance A mur", limeLight.getDistanceToAprilTag(limeLight.getLlResults().getTa()));
             //executer un code dependamment de l'etat choisie en haut
         }
