@@ -1,131 +1,88 @@
-## TeamCode Module
+# Table De Matière:
+* **[Comment set up le robot](#set-up)**
+* **[Comment Faire des TIPS](#faire-des-tips)**
+* **[Les Strategies](#Strats)**
+* **[Definition](#definition-de-mots)**
 
-Welcome!
+# Definition de Mots:
 
-This module, TeamCode, is the place where you will write/paste the code for your team's
-robot controller App. This module is currently empty (a clean slate) but the
-process for adding OpModes is straightforward.
+* **Cell:**
+    * Ce sont les boites sur les balances avec lesquelles on doit mettre les balles pour faire un TIP
 
-## Creating your own OpModes
+* **TIP:**
+    * Cela est l'action de faire changer de cote le Cell qui regarde en haut
 
-The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own.
+* **fleur:**
+    * Cela est les 'Tubes' place dans le terrain dans lesquels on place quatre balles pour commencer
 
-Sample opmodes exist in the FtcRobotController module.
-To locate these samples, find the FtcRobotController module in the "Project/Android" tab.
+* **Pollen:**
+    * Ce sont les petites balles jaunes
 
-Expand the following tree elements:
- FtcRobotController/java/org.firstinspires.ftc.robotcontroller/external/samples
+* **Nectar:**
+    * Ce sont les balles qui ont une couleur different que jaune (Rouge ou Bleu)
 
-### Naming of Samples
+# Set up:
 
-To gain a better understanding of how the samples are organized, and how to interpret the
-naming system, it will help to understand the conventions that were used during their creation.
+1. Connect l'ordinateur au Control hub.
+2. Utilise le REV Hardware Client et trouve le control hub.
+3. Puis trouve le device et run le code avec le play button.
 
-These conventions are described (in detail) in the sample_conventions.md file in this folder.
+# Points & Strats:
 
-To summarize: A range of different samples classes will reside in the java/external/samples.
-The class names will follow a naming convention which indicates the purpose of each class.
-The prefix of the name will be one of the following:
+## Faire des TIPS
+### Nombre de Ball Par TIP
+* 5 Nectar/TIP
+* 11 Pollen/TIP 11x = 1
+* 3 Nectar & 3 Pollen/TIP
+* 2 Nectar & 5 Pollen/TIP
+* 1 Nectar & 7 Pollen/TIP? (Théoriquement)
 
-Basic:  	This is a minimally functional OpMode used to illustrate the skeleton/structure
-            of a particular style of OpMode.  These are bare bones examples.
+## Strats
 
-Sensor:    	This is a Sample OpMode that shows how to use a specific sensor.
-            It is not intended to drive a functioning robot, it is simply showing the minimal code
-            required to read and display the sensor values.
+### General:
 
-Robot:	    This is a Sample OpMode that assumes a simple two-motor (differential) drive base.
-            It may be used to provide a common baseline driving OpMode, or
-            to demonstrate how a particular sensor or concept can be used to navigate.
+Ne stresse pas les fleurs, car ils ne donnent pas assez de point
 
-Concept:	This is a sample OpMode that illustrates performing a specific function or concept.
-            These may be complex, but their operation should be explained clearly in the comments,
-            or the comments should reference an external doc, guide or tutorial.
-            Each OpMode should try to only demonstrate a single concept so they are easy to
-            locate based on their name.  These OpModes may not produce a drivable robot.
+Preuve:
 
-After the prefix, other conventions will apply:
+Maximum théorique de 1 fleur complete:
 
-* Sensor class names are constructed as:    Sensor - Company - Type
-* Robot class names are constructed as:     Robot - Mode - Action - OpModetype
-* Concept class names are constructed as:   Concept - Topic - OpModetype
+6 pollens(2 points par pollens) + un Nectar de notre couleur(+5 bonus et +2 points pour etre la)
 
-Once you are familiar with the range of samples available, you can choose one to be the
-basis for your own robot.  In all cases, the desired sample(s) needs to be copied into
-your TeamCode module to be used.
+(7*2) + 5 = *19 points*
 
-This is done inside Android Studio directly, using the following steps:
+***MAIS***
 
- 1) Locate the desired sample class in the Project/Android tree.
+On gagne 2 point par Pollen et/ou Nectar dans les cells (Les trucs sur la balance)
 
- 2) Right click on the sample class and select "Copy"
+Donc soit on réussit à la faire descendre dernier second(+20 Points)
 
- 3) Expand the  TeamCode/java folder
+***OU***
 
- 4) Right click on the org.firstinspires.ftc.teamcode folder and select "Paste"
+On revient a la meme principe des fleurs sauf qu'on peut avoir plus de Pollen/Nectar en meme temps
 
- 5) You will be prompted for a class name for the copy.
-    Choose something meaningful based on the purpose of this class.
-    Start with a capital letter, and remember that there may be more similar classes later.
+Voir [Nombre de Ball Par TIP](#nombre-de-ball-par-tip)
 
-Once your copy has been created, you should prepare it for use on your robot.
-This is done by adjusting the OpMode's name, and enabling it to be displayed on the
-Driver Station's OpMode list.
+***DONC***
 
-Each OpMode sample class begins with several lines of code like the ones shown below:
-
-```
- @TeleOp(name="Template: Linear OpMode", group="Linear Opmode")
- @Disabled
-```
-
-The name that will appear on the driver station's "opmode list" is defined by the code:
- ``name="Template: Linear OpMode"``
-You can change what appears between the quotes to better describe your opmode.
-The "group=" portion of the code can be used to help organize your list of OpModes.
-
-As shown, the current OpMode will NOT appear on the driver station's OpMode list because of the
-  ``@Disabled`` annotation which has been included.
-This line can simply be deleted , or commented out, to make the OpMode visible.
+En General, on gagne plus en shootant durant les derniers seconds que de remplir les fleurs.
 
 
+### Autonomous
 
-## ADVANCED Multi-Team App management:  Cloning the TeamCode Module
+On devrait, demande à notre co-équipié s'ils vont shooter directement dans le Cell ou non.
 
-In some situations, you have multiple teams in your club and you want them to all share
-a common code organization, with each being able to *see* the others code but each having
-their own team module with their own code that they maintain themselves.
+***Si***
 
-In this situation, you might wish to clone the TeamCode module, once for each of these teams.
-Each of the clones would then appear along side each other in the Android Studio module list,
-together with the FtcRobotController module (and the original TeamCode module).
+Ils disent qu'ils vont shooter, on devra aller de l'autre cote, attendre qu'il shoot et qu'on est sûre que le Cell est en haut. Puis on shoot nos 4 balles de debut et on récolte les balles du gardin des autres.
 
-Selective Team phones can then be programmed by selecting the desired Module from the pulldown list
-prior to clicking to the green Run arrow.
+***Si***
 
-Warning:  This is not for the inexperienced Software developer.
-You will need to be comfortable with File manipulations and managing Android Studio Modules.
-These changes are performed OUTSIDE of Android Studios, so close Android Studios before you do this.
- 
-Also.. Make a full project backup before you start this :)
+Ils disent qu'ils ne vont shooter au debut, on shoot puis on essaie de recolter les balles apres qu'il tombe.
 
-To clone TeamCode, do the following:
+Comme ça on peut s'ajuster a eu.
+Mais de toute manière, on devra retourner a notre place pour le parking (si possible)
 
-Note: Some names start with "Team" and others start with "team".  This is intentional.
+### Teleop
 
-1)  Using your operating system file management tools, copy the whole "TeamCode"
-    folder to a sibling folder with a corresponding new name, eg: "Team0417".
-
-2)  In the new Team0417 folder, delete the TeamCode.iml file.
-
-3)  the new Team0417 folder, rename the "src/main/java/org/firstinspires/ftc/teamcode" folder
-    to a matching name with a lowercase 'team' eg:  "team0417".
-
-4)  In the new Team0417/src/main folder, edit the "AndroidManifest.xml" file, change the line that contains
-         package="org.firstinspires.ftc.teamcode"
-    to be
-         package="org.firstinspires.ftc.team0417"
-
-5)  Add:    include ':Team0417' to the "/settings.gradle" file.
-    
-6)  Open up Android Studios and clean out any old files by using the menu to "Build/Clean Project""
+En récoltant les balles, assure-toi d'essayer de "frapper" un autre robot. Comme ça il rate son shot.

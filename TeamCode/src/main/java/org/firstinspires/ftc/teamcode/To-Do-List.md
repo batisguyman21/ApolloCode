@@ -1,10 +1,32 @@
-# List de chose a faire
+# List de chose a faire:
+#### IMPORTANT:
+Lorsque vous êtes avec finis un tache, ajouter ce symbole a la fin ` ✓ `
 
-1) Attend pour L'annonce.
-2) Plan/Fais un strategy pour la saison.
+### Tout le monde:
+Decider sur une maniere de shooter (fix, turret, ect)
 
-## Set up:
+### Mechanique/Electricien/Les gens qui veulent construire :
+* Assembler le terrain
 
-1. Connect l'ordinateur au Control hub.
-2. Utilise le REV Hardware Client et trouve le control hub.
-3. Puis trouve le device et run le code avec le play button.
+* Assembler le robot avec les nouvelles extensions
+
+* Accrocher tous les fils au Control Hub
+
+### Modélisateur/Modélisatrice 3D:
+Si le robot de base + extension est deja fais, faite directement l'étape 2 sinon commencer du 1.
+* Faire le model 3d du robot avec ses extensions
+
+* discuter avec les strategists pour savoir environ où mettre le limelight
+
+* Dire au programmeur où se situe le limelight relative au robot
+
+### Programmeur:
+* Configure le Driver-Station pour qu'elle a les nouveaux motors, servos et le limelight.
+
+* Mettre a date les configuration du limelight en visitant ce site "[http://limelight.local:5801](http://limelight.local:5801)", entre autre la distance relative au robot.
+
+* Faire le code pour qu'on puisse jouer TeleOp
+  * Montrer les pilotes comment fair et demander leur opinion pour savoir quoi améliorer
+
+* Faire le code pour mode Autonome
+  * Apprendre Comment utiliser le limelight pour détecter des couleurs
