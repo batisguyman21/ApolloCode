@@ -1,8 +1,9 @@
 # Table De Matière:
+* **[Definition](#definition-de-mots)**
 * **[Comment set up le robot](#set-up)**
 * **[Comment Faire des TIPS](#faire-des-tips)**
 * **[Les Strategies](#Strats)**
-* **[Definition](#definition-de-mots)**
+* **[Construire l'arène](#Construire-larène)**
 
 # Definition de Mots:
 
@@ -86,3 +87,12 @@ Mais de toute manière, on devra retourner a notre place pour le parking (si pos
 ### Teleop
 
 En récoltant les balles, assure-toi d'essayer de "frapper" un autre robot. Comme ça il rate son shot.
+
+## Construire l'arène:
+
+Pour construire l'arène voici quelque manières de faire ceci :
+1. Suivre les [instruction precis de ftc](https://ftc-resources.firstinspires.org/ftc/archive/2027/field/eventfieldguide)(recommendé).
+2. Suivre les instruction de [Playing Field Resource](https://ftc-resources.firstinspires.org/ftc/field).
+
+On y trouve aussi un model 3D CAD avec plus ou moin 2.5 cm de tolerance.
+Clicker dessus pour [ceci](https://cad.onshape.com/documents/a355e772e3d24813de7852ee/w/f106353168f1f92100b81259/e/95d1e1e442b4138cccaf2d73)
