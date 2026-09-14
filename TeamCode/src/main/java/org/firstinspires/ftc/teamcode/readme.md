@@ -86,7 +86,7 @@ Mais de toute manière, on devra retourner a notre place pour le parking (si pos
 
 ### Teleop
 
-En récoltant les balles, assure-toi d'essayer de "frapper" un autre robot. Comme ça il rate son shot.
+En récoltant les balles, assure-toi d'essayer de rentrer en collision avec un autre robot. Comme ça il rate son shot.
 
 ## Construire l'arène:
 
