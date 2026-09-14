@@ -34,9 +34,12 @@
 ### Nombre de Ball Par TIP
 * 5 Nectar/TIP
 * 11 Pollen/TIP 11x = 1
-* 3 Nectar & 3 Pollen/TIP
-* 2 Nectar & 5 Pollen/TIP
-* 1 Nectar & 7 Pollen/TIP? (Théoriquement)
+* 8 Pollen + 0 Nectar
+* 7 Pollen + 1 Nectar (théoriquement)
+* 5 Pollen + 2 Nectar (théoriquement)
+* 3 Pollen + 3 Nectar (100%)
+* 2 Pollen + 4 Nectar (théoriquement)
+* 0 Pollen + 5 Nectar (théoriquement)
 
 ## Strats
 
