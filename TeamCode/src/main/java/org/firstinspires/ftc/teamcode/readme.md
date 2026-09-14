@@ -33,7 +33,7 @@
 ## Faire des TIPS
 ### Nombre de Ball Par TIP
 * 5 Nectar/TIP
-* 11 Pollen/TIP 11x = 1
+* 8 Pollen/TIP
 * 8 Pollen + 0 Nectar
 * 7 Pollen + 1 Nectar (théoriquement)
 * 5 Pollen + 2 Nectar (théoriquement)
